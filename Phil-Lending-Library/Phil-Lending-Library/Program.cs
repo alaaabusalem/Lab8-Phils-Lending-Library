@@ -6,9 +6,9 @@ namespace Phil_Lending_Library
 	{
 		static void Main(string[] args)
 		{
+			//Book newBook=new Book() { FirstName="Book6",LastName="A",NumOfPages=77};	
 
-
-
+       // Testing branch C
 			Library AlaaLibrary = new Library();
 			AlaaLibrary.Add("Book1","A","A",50);
 			AlaaLibrary.Add("Book2", "A", "A", 50);
@@ -20,7 +20,7 @@ namespace Phil_Lending_Library
 			string process = "";
 			while(process != "3")
 			{
-				Console.WriteLine("Enter the number of Process you want: 1. Borrow a book and Pack it to your E-Backpack  2. Unpack a book and Return it to the Library 3. exit");
+				Console.WriteLine("Enter the number of Process you want:\n1. Borrow a book and Pack it to your E-Backpack\n2. Unpack a book and Return it to the Library\n3. exit");
 				process=Console.ReadLine();
 				if(process == "1")
 				{
