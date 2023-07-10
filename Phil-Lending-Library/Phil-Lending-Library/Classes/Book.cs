@@ -13,8 +13,12 @@ namespace Phil_Lending_Library.Classes
         public string LastName { set; get; }
         public int NumOfPages { set; get; }
 
-		//public bool IsBorrow { set; get; }
+        //public bool IsBorrow { set; get; }
 
+        public Book()
+        {
+
+        }
         public Book(string title, string firstName, string lastName, int numOfPages)
         {
             Title = title;

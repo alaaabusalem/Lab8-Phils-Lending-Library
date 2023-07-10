@@ -45,13 +45,21 @@ namespace Phil_Lending_Library.Classes
 
 		public IEnumerator<Book> GetEnumerator()
 		{
+			
 			foreach (var item in Books.Keys)
 			{
 
 				yield return Books[item];
 			}
 		}
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			foreach (var item in Books.Keys)
+			{
 
+				yield return Books[item];
+			}
+		}
 		public void Return(Book book)
 		{
 			foreach (var item in Books.Keys)
@@ -66,13 +74,7 @@ namespace Phil_Lending_Library.Classes
 
 		}
 
-		IEnumerator IEnumerable.GetEnumerator()
-		{
-			foreach (var item in Books.Keys) { 
-
-			  yield return Books[item];	
-			}
-		}
+		
 
 		public int GetCountOfBooks()
 		{
